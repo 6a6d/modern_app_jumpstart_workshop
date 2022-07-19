@@ -23,6 +23,9 @@ spec:
       port: 80
   routes:
     - path: /
+      action:
+        pass: spa
+    - path: /
       matches:
       - conditions:
         - cookie: "app_version"
