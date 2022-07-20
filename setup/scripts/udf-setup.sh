@@ -6,7 +6,7 @@ cd $PWD
 git fetch
 git pull
 
-# Check if systemctl service is installed 
+# Check if systemctl service is installed
 if ! systemctl list-units --full -all | grep -Fq "udf-setup.service"; then
   cp $PWD/services/udf-setup.service /etc/systemd/system/
   systemctl daemon-reload

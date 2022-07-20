@@ -61,7 +61,7 @@ Before you can deploy the NGINX Ingress Controller, you will need to modify the 
 
     ```yaml
     controller:
-      appprotect: 
+      appprotect:
         enable: true
       appprotectdos:
         enable: true
@@ -81,7 +81,7 @@ Before you can deploy the NGINX Ingress Controller, you will need to modify the 
 
 1. Save the file.
 
-Next, you will need to update the NGINX Plus Ingress Argo CD manifest to match your environment.  
+Next, you will need to update the NGINX Plus Ingress Argo CD manifest to match your environment.
 
 1. Open the `manifests/nginx-ingress-subchart.yaml` file in your forked version of the **infra** repository.
 

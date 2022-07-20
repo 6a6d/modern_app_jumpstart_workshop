@@ -14,7 +14,7 @@ The action resource defines an action to perform for a request and is the basis 
 
 ### Pass
 
-The *pass* action passes the request to an upstream that is defined in the resource.  
+The *pass* action passes the request to an upstream that is defined in the resource.
 
 In the Brewz `virtual-server.yaml` manifest, the *spa* and *api* services leverage this method.
 
@@ -44,11 +44,11 @@ The *redirect* action redirects a request to a provided URL.
 
 ### Return
 
-The *return* action returns a preconfigured response.  
+The *return* action returns a preconfigured response.
 
 ### Proxy
 
-The *proxy* action passes a request to an upstream with the ability to modify the request/response.  
+The *proxy* action passes a request to an upstream with the ability to modify the request/response.
 
 In the Brewz `virtual-server.yaml` manifest, the */images* path uses this method to proxy requests to the api service's */images* path.
 

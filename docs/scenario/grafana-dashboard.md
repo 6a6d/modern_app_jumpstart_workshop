@@ -6,7 +6,7 @@ A list of Prometheus metrics available for querying in the dashboard are availab
 
 Grafana has been pre-installed using Helm based on [this guidance](https://github.com/grafana/helm-charts), and its service has been exposed in the k8s cluster via NodePort, and accessible in a UDF access method.
 
-1. Click on the **Grafana** access method in the **k3s** component in the UDF deployment. 
+1. Click on the **Grafana** access method in the **k3s** component in the UDF deployment.
 
 1. When presented for login credentials, enter `admin` as the username. To acquire the password, you must from your local machine interrogate k8s for the secret containing the password:
 

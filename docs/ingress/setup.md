@@ -67,8 +67,8 @@ Now that we have K3s up and running and a dedicated service account for UDF we n
         sleep 10
     done
 
-    # Add the UDF K8s API 
-    kubectl --kubeconfig=$NEWCFG config set-cluster udf  --server=https://$HOST:443 
+    # Add the UDF K8s API
+    kubectl --kubeconfig=$NEWCFG config set-cluster udf  --server=https://$HOST:443
     kubectl --kubeconfig=$NEWCFG config set clusters.udf.certificate-authority-data $CA
 
     # set the token
@@ -101,7 +101,7 @@ Now that we have K3s up and running and a dedicated service account for UDF we n
 # Fork Infrastructure Repository
 When practicing GitOps with Argo CD, it is a [good practice](https://argo-cd.readthedocs.io/en/stable/user-guide/best_practices/) to separate your application code from your infrastructure configuration into separate repositories. This will ensure that changes to either may occur in isolation without triggering a large-scale deployment. You will fork a secondary repository to your own GitHub account as you did earlier.
 
-You can complete this task through the GitHub UI: 
+You can complete this task through the GitHub UI:
 ![GitHub Fork](../assets/gh_fork_infra.png)
 
 or via the GitHub CLI:

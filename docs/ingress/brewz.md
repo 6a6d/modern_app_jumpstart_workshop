@@ -4,7 +4,7 @@ In this section, you will deploy the Brewz microservices using Argo CD.
 
 ## Update Argo CD Application Manifest
 
-You will need to update the Brewz Argo CD manifest to match your environment.  
+You will need to update the Brewz Argo CD manifest to match your environment.
 
 1. Open the `manifests/brewz-subchart.yaml` file in your forked version of the **primary** repository.
 1. Find the following variables and replace them with your information:

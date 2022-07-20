@@ -4,7 +4,7 @@ In this step, you will use GitOps to install Grafana leveraging Argo CD.
 
 ## Update Argo CD Application Manifest
 
-You will need to update the Grafana Argo CD manifest to match your environment.  
+You will need to update the Grafana Argo CD manifest to match your environment.
 
 1. Open the `manifests/grafana-subchart.yaml` file in your forked version of the **infra** repository.
 

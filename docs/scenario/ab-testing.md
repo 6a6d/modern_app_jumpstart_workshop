@@ -8,7 +8,7 @@ The development team has already been hard at work updating the Brewz spa app wi
 
 ## Update the Brewz Deployment and Virtual Server
 
-We need to deploy the new variant of the spa application, so we can conditionally route traffic to it. 
+We need to deploy the new variant of the spa application, so we can conditionally route traffic to it.
 
 1. In your fork of the lab repository, append the following yaml snippet to the `manifests/brewz/app.yaml` file and save it:
 
@@ -84,4 +84,3 @@ We need to deploy the new variant of the spa application, so we can conditionall
     <img src="../assets/chrome-cookie.png" alt="Cookie view in Chrome Developer Tools panel" width="600"/>
 
 1. Refresh the tab in Chrome. You should see a different design for the Brews application, notably that the background and font colors are different.
-

@@ -125,7 +125,7 @@ The DevOps and the application owners aren't willing to allow this error conditi
     # revert your commit
     git revert your_commit_id
 
-    # Update origin 
+    # Update origin
     git push origin
     ```
 
