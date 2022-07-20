@@ -196,8 +196,6 @@ A few items of interest in the output:
   - "/api/inventory" -> /api/inventory of inventory service
   - "/api/recommendations" -> /api/recommendations of recommendations service
 
-
-
 ## Next Steps
 
 Now that you have a base application deployed, let's take a deeper look at the [VirtualServer resource](virtualserver.md).

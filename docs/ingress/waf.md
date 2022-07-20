@@ -20,7 +20,6 @@ NGINX Ingress Controller has the ability to configure the NGINX App Protect WAF 
 
     You should receive a response of `"Could not find user!"`, as `12345b` in not a valid user id format.
 
-
 1. The next request will attempt a `POST` without the expected payload, and with an invalid and unexpected format of the `userId` parameter:
 
     ```bash
@@ -36,8 +35,8 @@ NGINX Ingress Controller has the ability to configure the NGINX App Protect WAF 
     API_POD=`kubectl get pods -o json | jq '.items[] | select(.metadata.name | startswith("api-")) | .metadata.name' -r`
     kubectl logs $API_POD -f
     ```
-    You may notice that there is an unhandled exception being logged, causing the request to timeout. This is obviously something that should be addressed in code, but we may be able to do something about it in the mean time.
 
+    You may notice that there is an unhandled exception being logged, causing the request to timeout. This is obviously something that should be addressed in code, but we may be able to do something about it in the mean time.
 
 ## Create and Deploy Security Policy
 
@@ -70,7 +69,6 @@ We will deploy the NAP WAF policy that is referencing the OpenAPI spec that the 
     - `waf-ap-logconf.yaml` is the logging configuration that NAP WAF will use, packaged as an `APLogConf` custom resource. Note that it is set to log `blocked` requests only.
     - `waf-policy.yaml` is a `Policy` custom resource that stitches together the `APPolicy` and `APLogConf` resources. This is the resource that we referenced and attached to the `VirtualServer` resource above.
 
-
 ## Monitor NAP WAF Security Events
 
 If you examine the contents of the `APLogConf` resource contained in `manifests/brewz/waf-ap-logconf.yaml` file, you will notice that we have configured NAP WAF to log to `stderr` rather than to a file destination. NGINX Ingress Controller is already logging both access log entries and configuration events to the `stdout` and `stderr` log stream and are viewable with `kubectl logs` executed on its pod. NAP WAF violation logs will now appear in this log stream as well.
@@ -86,7 +84,6 @@ kubectl logs $NIC_POD -n nginx-ingress -f
 We will use this log stream in the next section.
 
 **Note:** At times, the log stream may stop. If you are not seeing events appear after some time, type `ctrl+c` and attempt to stream logs again.
-
 
 ## Test for Efficacy
 

@@ -14,7 +14,6 @@ Grafana has been pre-installed using Helm based on [this guidance](https://githu
     kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
     ```
 
-
 1. Once logged in, click the **Data sources** item from the **Configuration** menu in the lower left. Click the **Add data source** button. Select **Prometheus**.
 
 1. Set the **URL** field to `http://prometheus-server`
@@ -43,4 +42,5 @@ Grafana has been pre-installed using Helm based on [this guidance](https://githu
     <img src="../assets/grafana-dashboard-traffic.png" alt="NIC Grafana Dashboard with traffic" width="600"/>
 
 ## Next Steps
+
 Monolith to Microservices Scenario complete. Return to [workshop index](../README.md).

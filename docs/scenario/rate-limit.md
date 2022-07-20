@@ -76,4 +76,5 @@ hey -n 20 -c 10 $BREWZ_URL/api/products
 Note that Hey should report `Status code distribution: [200] 12 responses, [503] 8 responses`. Why? When the number of requests per second per unique client IP configured in the rate limit policy had been exceeded, NGINX Ingress Controller started to respond with a `503 Service Unavailable` HTTP response, which signified an error response to Hey.
 
 ## Next Steps
+
 Achieve granular scalability and non-disruptive application deployments in [Refactor-to-microservices](refactor.md).

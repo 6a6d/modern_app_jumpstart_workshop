@@ -69,6 +69,7 @@ spec:
 ```
 
 Note that we have:
+
 * Added upstream definitions to the `inventory` and `recommendations` services.
 * Added more specific paths so that calls to `/api/inventory` and `/api/recommendations` are being routed directly to the authoritative services, and ultimately the pods that contain them.
 
@@ -121,7 +122,9 @@ kubectl get pods
 How many pods for the `inventory` service do you see?
 
 ## Remove unused code
+
 While out of scope for this lab, it would behoove the developers of the Brewz site to remove the now-unnecessary lines of code in the `api` service that previously performed these simple passthrough service calls. Once the code has been removed, only the `api` service's underlying pods need to be updated as opposed to the entire deployment, reducing the potential "blast radius" of changes. We'll touch on some common, non-disruptive deployment techniques later in this lab.
 
 ## Next Steps
+
 Acquire application performance visibility with [Grafana](grafana-dashboard.md).
