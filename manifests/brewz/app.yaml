@@ -65,7 +65,6 @@ spec:
               value: http://inventory:8002
             - name: RECOMMENDATIONS_URL
               value: http://recommendations:8001
-
 ---
 apiVersion: v1
 kind: Service
