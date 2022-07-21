@@ -15,4 +15,10 @@ repos:
     rev: v0.32.0
     hooks:
     - id: markdownlint
+      args: ['* --disable MD013']
     - id: markdownlint-fix
+      args: ['* --disable MD013']
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.2.0
+    hooks:
+    - id: detect-secrets
